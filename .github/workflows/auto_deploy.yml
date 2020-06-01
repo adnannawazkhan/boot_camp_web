@@ -28,7 +28,7 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: installing surge
-      run: npm install -g surge
+      run: sudo npm install -g surge
     - name: depoying surge
-      run: surge ./ delirious-ice.surge.sh --token $ {{secrets.SECRETS_DEPLOY}}
+      run: surge ./ greenroes.surge.sh --token ${{secrets.SECRETS_DEPLOY}}
         
